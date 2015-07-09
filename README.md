@@ -7,8 +7,8 @@ Used the following to generate this
 
 ```
 rails new nested_form_test
-rails g scaffold Category name:string organisations:references
-rails g scaffold Organisation name:string categories:references
+rails g scaffold Category name:string
+rails g scaffold Organisation name:string
 rails g model CategoryOrganisations organisation:references category:references
 rake db:create
 rake db:migrate
